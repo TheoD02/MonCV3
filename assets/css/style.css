@@ -1,3 +1,66 @@
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+nav {
+  padding: 0px !important;
+}
+
+nav a {
+  color: black;
+}
+
+nav li:hover {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+@media screen and (max-width: 992px) {
+  nav li:hover {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+nav .navbar-brand {
+  padding: 0.8rem;
+}
+
+nav .nav-item {
+  background-color: #eeeeee;
+  padding: 1rem;
+}
+
+nav .nav-item:hover {
+  color: black;
+  background-color: #dddddd;
+  border-right: 4px solid orange;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 992px) {
+  nav .nav-item:hover {
+    border-bottom: 4px solid orange;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+}
+
+nav .active {
+  background-color: #dddddd;
+  border-right: 4px solid orange;
+}
+
+@media screen and (max-width: 992px) {
+  nav .active {
+    border: 0px solid transparent;
+    border-bottom: 4px solid orange;
+  }
+}
+
 .arrowindicator {
   position: relative;
   bottom: -10rem;
@@ -31,5 +94,21 @@
   0% {
     bottom: -10rem;
   }
+}
+
+#home .center-vertical {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#home a {
+  color: #000;
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
 }
 /*# sourceMappingURL=style.css.map */

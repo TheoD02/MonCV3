@@ -1,3 +1,68 @@
+$bg-navbtn: #eeeeee;
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+nav {
+    padding: 0px !important;
+
+    a {
+        color: black;
+    }
+
+    li:hover {
+        transform: translateX(5px);
+    }
+    @media screen and (max-width: 992px) {
+        li:hover {
+            transform: translateX(0px);
+        }
+    }
+    .navbar-brand {
+        padding: 0.8rem;
+    }
+
+    .nav-item {
+        background-color: $bg-navbtn;
+        padding: 1rem;
+
+        &:hover {
+            color: black;
+            background-color: $bg-navbtn - #111111;
+            border-right: 4px solid orange;
+            transition: 0.4s;
+        }
+
+        @media screen and (max-width: 992px) {
+            &:hover {
+                border-bottom: 4px solid orange;
+                transition: 0.4s;
+            }
+        }
+    }
+
+    .active {
+
+        background-color: $bg-navbtn - #111111;
+        border-right: 4px solid orange;
+    }
+
+    @media screen and (max-width: 992px) {
+        .active {
+            border: 0px solid transparent;
+            border-bottom: 4px solid orange;
+        }
+    }
+
+}
+
+
+
+
+
 .arrowindicator {
     position: relative;
     bottom: -10rem;
@@ -19,5 +84,20 @@
         0% {
             bottom: -10rem;
         }
+    }
+}
+
+#home {
+    .center-vertical {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+    }
+
+    a {
+        color: #000;
+        text-emphasis: none;
     }
 }

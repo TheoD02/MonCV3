@@ -24,10 +24,10 @@
     <div class="container-fluid">
         <div class="row">
             <!-- NAV BAR -->
-            <div class="col-md-12 col-lg-2 p-0" style="background-color: yellow;">
+            <div class="col-md-12 col-lg-2 p-0 text-center">
                 <!-- A vertical navbar -->
                 <nav class="navbar navbar-expand-lg navbar-light bg-light d-block position-lg-fixed">
-                    <a class="navbar-brand" href="#">Théo Dulieu</a>
+                    <a class="navbar-brand" href="#home">Théo Dulieu</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -37,10 +37,10 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav flex-column">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Accueil</a>
+                                <a class="nav-link" href="#home">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Informations</a>
+                                <a class="nav-link" href="#infos">Informations</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Formations</a>
@@ -63,16 +63,16 @@
                 <div class="container-fluid">
                     <div class="row">
                         <!-- ACCUEIL -->
-                        <div class="col-12 vh-100">
-                            <div class="position-relative top-50 left-50 translate-middle text-center">
+                        <div id="home" class="col-12 vh-100">
+                            <div class="center-vertical text-center">
                                 <p class="display-3 p-0 m-0">Théo Dulieu</p>
                                 <p class="text-secondary">Développeur web</p>
                                 <a href="#infos"><i class="mdi mdi-arrow-down arrowindicator"></i></a>
                             </div>
                         </div>
-                        
+
                         <!-- INFOS -->
-                        <div class="col-12 p-4 text-center">
+                        <div id="infos" class="col-12 p-4 text-center">
                             <h2>A propos de moi</h2>
                             <ul>
                                 <li><i class="mdi mdi-calendar mr-2"></i>Date de naissance : </li>
