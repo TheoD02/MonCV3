@@ -1,0 +1,23 @@
+.arrowindicator {
+    position: relative;
+    bottom: -10rem;
+    font-size: 4rem;
+    animation: MoveUpDown 3s cubic-bezier(.22, .17, 0, 1) infinite;
+    cursor: pointer;
+
+    @keyframes MoveUpDown {
+
+        0%,
+        100% {
+            bottom: -10rem;
+        }
+
+        50% {
+            bottom: -8.5rem;
+        }
+
+        0% {
+            bottom: -10rem;
+        }
+    }
+}

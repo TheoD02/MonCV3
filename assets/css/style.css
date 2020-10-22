@@ -1,0 +1,35 @@
+.arrowindicator {
+  position: relative;
+  bottom: -10rem;
+  font-size: 4rem;
+  -webkit-animation: MoveUpDown 3s cubic-bezier(0.22, 0.17, 0, 1) infinite;
+          animation: MoveUpDown 3s cubic-bezier(0.22, 0.17, 0, 1) infinite;
+  cursor: pointer;
+}
+
+@-webkit-keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: -10rem;
+  }
+  50% {
+    bottom: -8.5rem;
+  }
+  0% {
+    bottom: -10rem;
+  }
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: -10rem;
+  }
+  50% {
+    bottom: -8.5rem;
+  }
+  0% {
+    bottom: -10rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
