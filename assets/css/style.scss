@@ -1,4 +1,8 @@
-$bg-navbtn: #eeeeee;
+$bg-navbtn: #DEE2E6;
+$bg-navbar: #e9ecef;
+$primary: #DEE2E6;
+$secondary: #E9ECEF;
+$tertiary: #e9e9e9;
 
 html,
 body {
@@ -6,21 +10,27 @@ body {
     scroll-behavior: smooth;
 }
 
+.bg-navbar {
+    background-color: $bg-navbar;
+}
+
 nav {
     padding: 0px !important;
+    position: fixed !important;
+
+    @media screen and (max-width: 1140px) {
+        position: fixed;
+        z-index: 10000;
+    }
 
     a {
         color: black;
     }
 
-    li:hover {
-        transform: translateX(5px);
+    li {
+        word-break: keep-all;
     }
-    @media screen and (max-width: 992px) {
-        li:hover {
-            transform: translateX(0px);
-        }
-    }
+
     .navbar-brand {
         padding: 0.8rem;
     }
@@ -31,7 +41,7 @@ nav {
 
         &:hover {
             color: black;
-            background-color: $bg-navbtn - #111111;
+            background-color: $bg-navbtn - #111;
             border-right: 4px solid orange;
             transition: 0.4s;
         }
@@ -58,10 +68,9 @@ nav {
     }
 
 }
-
-
-
-
+.cbody {
+    margin-top: 56px;
+}
 
 .arrowindicator {
     position: relative;
@@ -87,6 +96,10 @@ nav {
     }
 }
 
+ul {
+    list-style-type: none;
+}
+
 #home {
     .center-vertical {
         position: absolute;
@@ -100,4 +113,29 @@ nav {
         color: #000;
         text-emphasis: none;
     }
+}
+
+#home {
+    background-color: $tertiary;
+}
+
+#infos {
+    background-color: $secondary;
+
+    ul {
+        columns: 2;
+    }
+    @media screen and (max-width: 720px) {
+        ul {
+            columns: 1;
+        }
+    }
+}
+
+#formations {
+    background-color: $primary;
+}
+
+#professional-exp {
+    background-color: $secondary;
 }
